@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1>🎥 Cinema Ticket Booking 🎞️</h1>
+        <div>
+            <label for="fname">Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="1" max="80" placeholder="Age" required>
+        </div>
+        <br>
+        <div>
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" name="tickets" id="tickets" min="1" placeholder="How Many Tickets?" required>
+        </div>
+        <br>
+        <div>
+            <button id="submitting" type="button" onclick="design()">Submit Info</button>
+            <button id="clearing" type="button" onclick="clearings()">Clear Info</button>
+        </div>
+        <br>
+        <div>
+            <hr>
+        </div>
+        <div id="results"></div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
